@@ -75,6 +75,8 @@ def _make_buttons(pages, primary_page=None):
 @rt("/show_buttons/{page}")
 def buttons(page: int):
     global n_pages
+    if n_pages < 5:
+        return _make_buttons(pages=range(n_pages), primary_page=page)
     if page in list(range(3)):
         return _make_buttons(pages=[0, 1, 2, 3, None, n_pages - 1], primary_page=page)
     elif page in list(range(n_pages - 3, n_pages)):
@@ -91,7 +93,7 @@ def buttons(page: int):
 
 blog_title = "BLOG"
 current_page = 0
-posts = [Li(post_title(f)) for f in sorted(root.Glob("*.md"), reverse=True)] * 10
+posts = [Li(post_title(f)) for f in sorted(root.Glob("*.md"), reverse=True)] * 1
 n_posts_per_page = 8
 n_pages = len(posts) // n_posts_per_page
 if len(posts) % n_posts_per_page != 0:
