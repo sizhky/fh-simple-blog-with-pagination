@@ -1,2 +1,3 @@
-# fh-simple-blog-with-pagination
-# fh-simple-blog-with-pagination
+# FastHTML Simple Blog with pagination
+
+Create a simple blog in no time!
