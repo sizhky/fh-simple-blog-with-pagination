@@ -2,4 +2,10 @@
 
 Create a simple blog in no time!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/cTCDKG0MGpA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<div align="left">
+      <a href="https://www.youtube.com/embed/cTCDKG0MGpA">
+         <img src="https://img.youtube.com/vi/cTCDKG0MGpA/0.jpg" style="width:100%;">
+      </a>
+</div>
